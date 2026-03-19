@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #F5F0E8;
+  --color-surface: #FFFFFF;
+  --color-sidebar: #1A1812;
+  --color-text: #1A1812;
+  --color-muted: #8A8070;
+  --color-gold: #C9A84C;
+  --color-gold-light: #E8D08A;
+  --color-gold-dark: #8C6D28;
+  --color-border: rgba(26,24,18,0.1);
+  --color-green: #4A7C59;
+  --color-red: #8C3A2E;
+  --color-orange: #C97832;
+}
+
+.dark {
+  --color-bg: #1A1812;
+  --color-surface: #2C2820;
+  --color-sidebar: #0F0E0A;
+  --color-text: #F5F0E8;
+  --color-muted: #6B6055;
+  --color-gold: #E8D08A;
+  --color-gold-light: #F5E8B0;
+  --color-gold-dark: #C9A84C;
+  --color-border: rgba(255,255,255,0.08);
+  --color-green: #7DC89A;
+  --color-red: #E07A6E;
+  --color-orange: #E8A870;
+}
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
